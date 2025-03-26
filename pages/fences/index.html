@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Master</title>
+
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+
+    <link href="../../styles/pages.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/style-min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon.ico">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg_pages">
+            <header class="header">
+                <!-- DESKTOP NAVIGATION -->
+                <a href="/" class="logo">
+                    <img src="../../assets/logo_1.svg" alt="">
+                </a>
+                <nav class="nav desktop-nav">
+                    <a class="menu__link dark_color" href="../../pages/about/">О нас</a>
+                    <a class="menu__link dark_color" href="../../pages/portfolio/">Портфолио</a>
+                    <a class="menu__link dark_color" href="../../pages/services/">Услуги</a>
+                </nav>
+                <div class="right-section desktop">
+                    <a class="phone__number dark_color" href="tel:+79511471448">+7 (951) 147-14-48</a>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="mobile-menu">
+                    <div id="burger-menu"><span></span></div>
+                    <div id="menu">
+                        <ul>
+                          <li><a href="../../pages/about/">О нас</a></li>
+                          <li><a href="../../pages/portfolio/">Портфолио</a></li>
+                          <li><a href="../../pages/services/">Услуги</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <section class="block">
+            <div class="container">
+                <div class="text_description">
+                    <p>[ Портфолио ]</p>
+                    <h2 class="title-2 bold-text uppercase">Наши <i>работы</i></h2>
+                </div>
+
+                <div class="container_images">
+                    <img src="../../assets/fences/1.jpeg" alt="Fence 1">
+                    <img src="../../assets/fences/2.jpeg" alt="Fence 2">
+                    <img src="../../assets/fences/3.jpeg" alt="Fence 3">
+                    <img src="../../assets/fences/4.jpeg" alt="Fence 4">
+                    <img src="../../assets/fences/5.jpeg" alt="Fence 5">
+                    <img src="../../assets/fences/6.jpeg" alt="Fence 6">
+                    <img src="../../assets/fences/7.jpeg" alt="Fence 7">
+                    <img src="../../assets/fences/8.jpeg" alt="Fence 8">
+                    <img src="../../assets/fences/9.jpeg" alt="Fence 9">
+                    <img src="../../assets/fences/10.jpeg" alt="Fence 10">
+                    <img src="../../assets/fences/11.jpeg" alt="Fence 11">
+                    <img src="../../assets/fences/12.jpeg" alt="Fence 12">
+                    <img src="../../assets/fences/13.jpeg" alt="Fence 13">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="block">
+            <div class="container" id="form">
+                <h2 class="title-2 center light-text uppercase">Остались <b>вопросы</b>?</h2>
+                <p class="txt center experience__info">Отправьте заявку через форму или свяжитесь с нами любым удобным для Вас способом, и мы поможем Вам выбрать подходящий вариант для вашего участка</p>
+                <div class="form-container">
+                    <div class="form-container-1">
+                        <form action="" method="POST" id="myform">
+                            <label for="first_name">[ Имя ]</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Иван" required>
+                            
+                            <label for="last_name">[ Фамилия ]</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Иванов" required>
+                            
+                            <label for="phone">[ Телефон ]</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 920 829 03 73" required>
+                            
+                            <label for="comment">[ Комментарий ]</label>
+                            <textarea id="comment" name="comment" rows="4" placeholder=""></textarea>
+                            
+                        </form>
+                    </div>
+
+                    <div class="form-container-2">
+                        <p class="consent">Нажимая на кнопку «Узнать стоимость», вы даете согласие на обработку персональных данных в соответствии с <a href="../../pages/policy/">Политикой конфиденциальности</a></p>
+                        <button type="submit" class="btn form__btn" form="myform">Отправить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div style="display: flex;">
+                        <a href="/" class="logo logo_footer">
+                            <img src="../../assets/logo.svg" alt="IRON MASTER">
+                        </a>
+                    </div>
+                <div class="container">
+                    <div class="footer-flex">
+                        <div class="footer-section">
+                            <h3>Сотрудничество</h3>
+                            <div class="subscribe">
+                                <input type="email" placeholder="Email">
+                                <button>+</button>
+                            </div>
+                            <p>Нажимая на кнопку «+», вы даете согласие на обработку персональных данных в соответствии с <a href="../../pages/policy/">Политикой конфиденциальности</a></p>
+                        </div>
+                        <div class="footer-section footer-section-other">
+                            <h3>Звоните</h3>
+                            <span><a href="tel:+79511471448">+7 (951) 147-14-48</a></span>
+                            <p>С 9:30 до 18:30 по будням</p>
+                        </div>
+                        <div class="footer-section footer-section-other">
+                            <h3>Пишите</h3>
+                            <span><a href="mailto:Loganmamba@yandex.ru">Loganmamba@yandex.ru</a></span>
+                            <div class="social-icons">
+                                <a href="#"><img src="../../assets/telegram.webp" class="telegram-icon" alt="Telegram"></a>
+                                <a href="#"><img src="../../assets/whatsapp.webp" alt="WhatsApp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="../../js/main.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@1&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500&display=swap');
+@import url('fonts.css');
 
 html{
 	-webkit-box-sizing:border-box;
@@ -67,7 +68,7 @@ img{
 }
 }
 *{
-	font-family: "Corbel", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 body,html{
 	position:relative;
@@ -1366,14 +1367,12 @@ input[type="text"],input[type="email"],input[type="tel"] {
 input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus, textarea:focus {
 	border: 3px solid #007bff;
 	outline: none;
-	/* Видалення стандартного обведення фокусу */
 }
 .input-wrapper {
 	position: relative;
 }
 .input-wrapper input {
 	padding-right: 30px;
-	/* Задаємо правий відступ для місця під галочку */
 }
 .input-wrapper .check-icon {
 	position: absolute;
@@ -1387,16 +1386,12 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus, text
 .checkbox {
 	width: 35px;
 }
-/* Стилі для валідних інпутів */
 .valid-input {
 	border: 3px solid #41ad48;
-	/* Колір рамки для валідних інпутів */
 }
-/* Стилі для невалідних інпутів */
 .failed-input {
 	border: 3px solid red;
-	/* Колір рамки для невалідних інпутів */
-}
+
 .iti {
 	width: 100% !important;
 }
@@ -1428,7 +1423,6 @@ input[type="text"]:focus,input[type="email"]:focus,input[type="tel"]:focus, text
 }
 .form__wrapper-loader.loader,.api-error.loader {
 	display: block;
-/*	display: none;*/
 }
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
 	margin-left: 6px;

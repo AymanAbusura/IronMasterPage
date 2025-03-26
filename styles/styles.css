@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@1&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500&display=swap');
+@import url('fonts.css');
 
 @font-face {
     font-family: 'Bebas Neue Pro';
@@ -13,17 +14,17 @@
 }
 
 .bold-text {
-    font-family: "Corbel", sans-serif!important;
+    font-family: 'Open Sans', sans-serif!important;
     font-weight: bold!important;
 }
 
 .italic-text {
-    font-family: 'Plus Jakarta Sans', sans-serif!important;
+    font-family: 'Open Sans', sans-serif!important;
     font-style: italic!important;
 }
 
 .number-text {
-    font-family: 'Poppins', sans-serif!important;
+    font-family: 'Myriad Pro', sans-serif!important;
 }
 
 .uppercase {
@@ -78,7 +79,9 @@
     z-index: 0;
 }*/
 
-
+.title__home {
+    font-size: 55px!important;
+}
 
 .header_1 {
     background: #1c767c!important;
@@ -326,7 +329,7 @@
     display: block;
 }
 
-.about_txt { font-size: 15px!important; }
+.about_txt { font-size: 14px!important; }
 
 .about_right_section {
     /*display: flex;

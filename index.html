@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Master</title>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <link href="styles/css.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style-min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg">
+            <header class="header">
+                <!-- DESKTOP NAVIGATION -->
+                <a href="/" class="logo">
+                    <img src="assets/logo.svg" alt="">
+                </a>
+                <nav class="nav desktop-nav">
+                    <a class="menu__link" href="/pages/about/">О нас</a>
+                    <a class="menu__link" href="/pages/portfolio/">Портфолио</a>
+                    <a class="menu__link" href="/pages/services/">Услуги</a>
+                </nav>
+                <div class="right-section desktop">
+                    <a class="phone__number" href="tel:+79511471448">+7 (951) 147-14-48</a>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="mobile-menu">
+                    <div id="burger-menu"><span></span></div>
+                    <div id="menu">
+                        <ul>
+                          <li><a href="/pages/about/">О нас</a></li>
+                          <li><a href="/pages/portfolio/">Портфолио</a></li>
+                          <li><a href="/pages/services/">Услуги</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <section class="home">
+                <div class="container home__hold">
+                    <div class="home__body">
+                        <div class="home__content">
+                            <p class="home__text light-text">ИЗГОТОВЛЕНИЕ <i>МЕТАЛЛОКАРКАСНЫХ</i> КОНСТРУКЦИЙ</p>
+                            <p class="description__text">Надёжность и прочность в каждой детали!</p>
+                            <div class="home__body__div">
+                                <button class="cta-button cta-button_1"><a href="/pages/about/">Узнать больше</a></button>
+                                <button class="cta-button-free scroll_btn">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="block p0 about_block">
+            <div class="container">
+                <div class="block__row container_about">
+                    <div class="block__img block__img-1 about_right_section">
+                        <img src="assets/home.webp" alt="" class="about_right_section_img" loading="lazy">
+                    </div>
+                    <div class="about_description">
+                        <div class="about_description-1">
+                            <div class="btn-cta btn-o about-us">
+                                <p>Iron master</p>
+                            </div>
+                            <h2 class="title-2 bold-text">Мы работаем для вашего <em>комфорта</em></h2>
+                            <p class="txt about_txt light-text">Мы компания из Белгорода, специализирующаяся на изготовлении и установке заборов, навесов, ворот из порфлиста. еврошаткета, саидинга и жалюзи. мы стремимся к качеству и уникальном дизайну, обеспечивая надежность и функциональность в каждом проекте, чтобы удовлетворить потребности наших клиентов.</p>
+                            <div class="button"><a href="/pages/services/" class="cta-button cta-btn">Перейти к услугам</a></div>
+                        </div>
+                    </div>
+
+                    <div class="block__col about_block">
+                        <div class="about_block-1">
+                            <p class="txt about_txt">25+</p>
+                            <span class="txt about_txt light-text">Лет опыта</span>
+                        </div>
+                        <div class="about_block-1">
+                            <p class="txt about_txt">1,230</p>
+                            <span class="txt about_txt light-text">Законченных проектов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block block__how">
+            <div class="container">
+                <h2 class="title-2 center bold-text uppercase">Портфолио</h2>
+                <div class="why_cards">
+                    <div class="block__line why_card">
+                        <div class="block__body">
+                            <img src="assets/card1.webp" alt="" class="block__image">
+                            <a href="/pages/doors/" class="overlay">Ворота</a>
+                        </div>
+                    </div>
+                    <div class="block__line why_card">
+                        <div class="block__body">
+                            <img src="assets/card2.webp" alt="" class="block__image">
+                            <a href="/pages/canopies/" class="overlay">Навесы</a>
+                        </div>
+                    </div>
+                    <div class="block__line why_card">
+                        <div class="block__body block__body_special">
+                            <img src="assets/card3.webp" alt="" class="block__image">
+                            <a href="/pages/fences/" class="overlay">Заборы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="block">
+            <div class="container" id="form">
+                <h2 class="title-2 center light-text uppercase">Остались <b>вопросы</b>?</h2>
+                <p class="txt center experience__info">Отправьте заявку через форму или свяжитесь с нами любым удобным для Вас способом, и мы поможем Вам выбрать подходящий вариант для вашего участка</p>
+                <div class="form-container">
+                    <div class="form-container-1">
+                        <form action="" method="POST" id="myform">
+                            <label for="first_name">[ Имя ]</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Иван" required>
+                            
+                            <label for="last_name">[ Фамилия ]</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Иванов" required>
+                            
+                            <label for="phone">[ Телефон ]</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 920 829 03 73" required>
+                            
+                            <label for="comment">[ Комментарий ]</label>
+                            <textarea id="comment" name="comment" rows="4" placeholder=""></textarea>
+                            
+                        </form>
+                    </div>
+
+                    <div class="form-container-2">
+                        <p class="consent">Нажимая на кнопку «Узнать стоимость», вы даете согласие на обработку персональных данных в соответствии с <a href="/pages/policy/">Политикой конфиденциальности</a></p>
+                        <button type="submit" class="btn form__btn" form="myform">Отправить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container container_map">
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div style="display: flex;">
+                        <a href="/" class="logo logo_footer">
+                            <img src="assets/logo.svg" alt="IRON MASTER">
+                        </a>
+                    </div>
+                <div class="container">
+                    <div class="footer-flex">
+                        <div class="footer-section">
+                            <h3>Сотрудничество</h3>
+                            <div class="subscribe">
+                                <input type="email" placeholder="Email">
+                                <button>+</button>
+                            </div>
+                            <p>Нажимая на кнопку «+», вы даете согласие на обработку персональных данных в соответствии с <a href="/pages/policy/">Политикой конфиденциальности</a></p>
+                        </div>
+                        <div class="footer-section footer-section-other">
+                            <h3>Звоните</h3>
+                            <span><a href="tel:+79511471448">+7 (951) 147-14-48</a></span>
+                            <p>С 9:30 до 18:30 по будням</p>
+                        </div>
+                        <div class="footer-section footer-section-other">
+                            <h3>Пишите</h3>
+                            <span><a href="mailto:Loganmamba@yandex.ru">Loganmamba@yandex.ru</a></span>
+                            <div class="social-icons">
+                                <a href="#"><img src="assets/telegram.webp" class="telegram-icon" alt="Telegram"></a>
+                                <a href="#"><img src="assets/whatsapp.webp" alt="WhatsApp"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
